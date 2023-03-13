@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.js" -type f -exec rm {} +
+find . -type d -not -name '.' | wc -l
