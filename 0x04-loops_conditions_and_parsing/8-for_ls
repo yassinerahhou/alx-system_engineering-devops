@@ -2,7 +2,7 @@
 #coment hhh
 list=$(ls)
 for i in $list ; do
-if (($i!= .*));then
+if [[ "$i" != .* ]]; then
 y="${i#*-}"
 echo "$y"
 fi
