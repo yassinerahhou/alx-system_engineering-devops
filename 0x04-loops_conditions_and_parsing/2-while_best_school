@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Hello World Program in Bash Shell
+i=0
+while (( i <10  ));do
+    echo "Best School";
+    ((i++));
+done
