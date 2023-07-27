@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Hello World Program in Bash Shell
+i=1
+while [ $i -le 20 ]; do
+    
+    case $i in
+        4)
+        echo $i    
+        echo "bad luck" 
+        ;;
+    
+         
+        9)
+            
+        echo $i  
+        echo "bad luck from Japan"
+        ;;
+        
+        17)
+        echo $i      
+        echo "bad luck from Italy" 
+        ;;
+        *)
+        echo $i ;
+    esac
+        i=$((i+1)) 
+    
+    
+done
