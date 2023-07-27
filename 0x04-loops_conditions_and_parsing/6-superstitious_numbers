@@ -6,7 +6,7 @@ while [ $i -le 20 ]; do
     case $i in
         4)
             echo $i
-            echo "bad luckfrom China"
+            echo "bad luck from China"
             ;;
         9)
             echo $i
