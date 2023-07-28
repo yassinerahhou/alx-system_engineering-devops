@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#lcoment
+i=0
+while ((i==0));do
+echo "To infinity and beyond"
+sleep 2
+kill -SIGUSR1 "$(67-stop_me_if_you_can)""
+echo "I am invincible!!!"
+done
