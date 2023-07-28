@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Killder.
+
+pkill -f -SIGKILL 7-highlander
