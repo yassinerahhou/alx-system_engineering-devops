@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+x=$(ps auxf )
+while read -r line ;do
+if [[ $line == *bash* ]];then
+echo "$line"
+fi
+done <<< $x
