@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
-# Comment
+#lcoment
 i=0
-terminate() {
-  echo "I am invincible!!!"
-  exit 0
-}
-trap terminate SIGTERM
-while true; do
-  echo "To infinity and beyond"
-  sleep 2
+while ((i==0));do
+echo "To infinity and beyond"
+sleep 2
+if ((i==SIGTERM));then
+echo "I am invincible!!!"
+sleep 2
+
+#kill -SIGTERM "$(67-stop_me_if_you_can)""
+else 
+echo "To infinity and beyond"
+sleep 2
+fi
 done
