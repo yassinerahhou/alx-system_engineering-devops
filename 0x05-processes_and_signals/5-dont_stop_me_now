@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Comment
-pkill 4-to_infinity_and_beyond
+#lcoment
+kill "$(pgrip -f 4-to_infinity_and_beyond)"
 
