@@ -1,20 +1,7 @@
 #!/usr/bin/env bash
 # Comment
-i=0
-terminate() {
-  echo "I am invincible!!!"
-  exit 0
-}
-
-trap terminate SIGTERM
-
 while true; do
   echo "To infinity and beyond"
   sleep 2
-  if ((i == 0)); then
-    echo "To infinity and beyond"
-    sleep 2
-  else
-    break
-  fi
+  trap 'echo "To infinity and beyond"' SIGTERM
 done
