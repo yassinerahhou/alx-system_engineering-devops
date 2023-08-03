@@ -1,14 +1,4 @@
 #!/usr/bin/env bash
 #OSI model
-What is the OSI model?
-
-The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology.
-How is the OSI model organized?
-
-From the lowest to the highest level.
-The OSI model is organized into seven layers, with each layer performing a specific set of functions related to network communication. The layers are arranged from the lowest level (Physical Layer) to the highest level (Application Layer). This organization helps in understanding and implementing network communication more efficiently and enables different network hardware and software to work together effectively.
-
-
-
-
-
+2
+2
