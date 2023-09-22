@@ -1,3 +1,4 @@
+# Replace with the desired
 file { '/tmp/school':
 ensure  => '/tmp/school',
 mode    => '0744',
