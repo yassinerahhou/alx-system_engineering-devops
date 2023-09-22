@@ -1,6 +1,5 @@
-# kill the process
-exec { 'killmenow_process':
+# kill a process
+exec { 'pkill':
   command  => 'pkill killmenow',
-  
-provider => 'shell'
+  provider => 'shell'
 }
