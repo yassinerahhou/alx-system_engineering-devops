@@ -1,0 +1,7 @@
+#config
+Host *
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
+
+
