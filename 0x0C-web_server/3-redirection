@@ -1,0 +1,13 @@
+#!/bin/env bash
+
+# Define the target URL where /redirect_me should be redirected
+
+
+# Create a temporary NGINX configuration snippet
+config_snippet="/etc/nginx/snippets/redirect_me.conf"
+echo "location /redirect_me { return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4; }" > /etc/nginx/sites-available/default
+
+# Test the NGINX configuration for syntax errors
+nginx -t
+sudo systemctl reload nginx
+
