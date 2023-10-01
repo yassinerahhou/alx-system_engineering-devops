@@ -1,7 +1,8 @@
 #!/bin/env bash
 
 # Define the target URL where /redirect_me should be redirected
-
+pt-get -y update
+apt-get -y install nginx
 
 # Create a temporary NGINX configuration snippet
 config_snippet="/etc/nginx/snippets/redirect_me.conf"
