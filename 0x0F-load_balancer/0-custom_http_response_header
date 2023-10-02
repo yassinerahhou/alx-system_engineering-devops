@@ -1,6 +1,5 @@
+
 #!/usr/bin/env bash
-
-
 # web-01 and web-02
 sudo apt-get update
 sudo apt-get install nginx -y
@@ -18,3 +17,8 @@ echo "server {
 "> /etc/nginx/sites-available/default
 sudo nginx -t
 sudo service nginx restart
+
+
+
+
+
