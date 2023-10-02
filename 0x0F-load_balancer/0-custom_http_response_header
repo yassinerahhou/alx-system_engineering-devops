@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 # web-01 and web-02
 sudo apt-get update
