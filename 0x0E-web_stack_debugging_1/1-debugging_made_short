@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 #check nginx status 
-sudo apt-get update
-sudo apt-get -y install nginx
-sudo service nginx start
 sudo sed -i "s/sites-enabled/sites-available/" /etc/nginx/nginx.conf
 sudo service nginx restart
-service nginx stop
+sudo pkill -o nginx
