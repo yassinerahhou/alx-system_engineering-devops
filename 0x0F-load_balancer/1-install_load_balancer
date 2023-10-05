@@ -4,4 +4,17 @@
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install haproxy
+echo "ENABLED=1" > /etc/default/haproxy
+
+echo "
+   listen load_balancer
+   bind *:80
+   mode http
+   balance roundrobin
+   option httpclose
+   option forwardfor
+   server 17272-web-01 54.160.115.129 check
+   server 17272-web-02 52.87.235.176 check
+" >> /etc/haproxy/haproxy.cfg
+
 sudo service haproxy start
