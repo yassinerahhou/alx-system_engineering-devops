@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#script that run whoami commande under the user
+whoami "$1"
+
