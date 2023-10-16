@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#script that run whoami commande under the user
+sudo "$1"  whoami
+
