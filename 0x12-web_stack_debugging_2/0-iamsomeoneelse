@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#script that run whoami commande under the user
-sudo -u "$i" whoami
+#script that run whoami commande under the
+sudo -u "$1" whoami
 
