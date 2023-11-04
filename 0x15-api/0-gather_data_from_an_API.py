@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" data in the CSV format"""
+"""Data in the CSV format"""
 import requests
 from sys import argv
 
@@ -16,14 +16,12 @@ if __name__ == "__main__":
         if i.get("completed") is True:
             completed.append(i.get("title"))
 
-    # "brahim"  # EMPLOYEE_NAME: name of the employee
+    # EMPLOYEE_NAME: name of the employee
     EMPLOYEE_NAME = user.get("name")
-    NUMBER_OF_DONE_TASKS = len(completed)  # number of completed tasks
+    NUMBER_OF_DONE_TASKS = len(completed)  # Number of completed tasks
 
-    # number of completed tasks [completed + non-completed] tasks
+    # Number of completed tasks (completed + non-completed tasks)
     TOTAL_NUMBER_OF_TASKS = len(tasks)
-
-    # TASK_TITLE = "task title"
 
     print("Employee {} is done with tasks({}/{}):".format(EMPLOYEE_NAME,
           NUMBER_OF_DONE_TASKS, TOTAL_NUMBER_OF_TASKS))
