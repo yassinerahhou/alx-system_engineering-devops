@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" data in the CSV format"""
 import requests
 from sys import argv
 
