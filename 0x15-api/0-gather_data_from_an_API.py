@@ -3,12 +3,10 @@
 import requests
 from sys import argv
 
-# Check if the script is being run as the main program
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
     user = requests.get(url + "users/{}".format(argv[1]))
-    user_json = user.json()  # Send an HTTP GET request to retrieve a list of tasks (todos) for the same user
-
+    user_json = user.json()
     tasks = requests.get(url + "todos?userId={}".format(argv[1]))
     tasks_json = tasks.json()
 
@@ -21,7 +19,6 @@ if __name__ == "__main__":
     EMPLOYEE_NAME = user_json.get("name")
     NUMBER_OF_DONE_TASKS = len(completed)  # Number of completed tasks
 
-    # Number of completed tasks (completed + non-completed tasks)
     TOTAL_NUMBER_OF_TASKS = len(tasks_json)
 
     print("Employee {} is done with tasks({}/{}):".format(EMPLOYEE_NAME,
