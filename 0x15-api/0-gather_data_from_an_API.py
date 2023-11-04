@@ -1,10 +1,3 @@
-
-Your code adheres to PEP 8 style guidelines for the most part. It is well-structured and follows recommended conventions. However, there is a minor issue with the comment at the end of your code. The comment is not formatted properly and contains a typo.
-
-Here's the corrected version of your code, which addresses the issue with the comment:
-
-python
-Copy code
 #!/usr/bin/python3
 """Data in the CSV format"""
 import requests
